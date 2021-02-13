@@ -14,7 +14,7 @@ for EACHFILE in $FILENAME
 do
    FILE+=" -f $EACHFILE"
 done
-FILE+=" up -d"
+FILE+=" up"
 echo $FILE
 echo $FILE > run.sh
 sh run.sh
