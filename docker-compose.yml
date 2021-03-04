@@ -1,7 +1,6 @@
 version: '3'
 services:
-  nginx:
-    container_name: aws_middle
+  ${CIRCLE_PROJECT_REPONAME}:
     image: nginx
     volumes:
       - /home/ubuntu/conf.d:/etc/nginx/conf.d
