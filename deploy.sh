@@ -8,6 +8,9 @@ mkdir -p ../docker-compose
 cp docker-compose.yml ../docker-compose
 
 cd ../docker-compose
+
+envsubst < docker-compose.yml > docker-compose-$CIRCLE_PROJECT_REPONAME.yml
+
 pwd
 FILENAME=`ls ./*.yml`
 FILE="docker-compose"
